@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrustedHealthRates | Get Free Quotes Here</title>
+  <link rel="icon" type="image/png" href="images/TrustedHealthRatesLogo.png">
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    .animate-scale-in {
+      animation: scaleIn 0.5s ease-out forwards;
+    }
+    .stagger-delay-1 { animation-delay: 0.2s; }
+    .stagger-delay-2 { animation-delay: 0.4s; }
+    .stagger-delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body class="bg-white">
+  !-- Navigation Bar -->
+  <nav class="navbar bg-white/90 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-3">
+      <!-- Main Navigation Container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html" class="transition-transform hover:scale-105 duration-300">
+            <img src="images/output-onlinepngtools.png" alt="Trusted Health Rates" class="h-12">
+          </a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="lg:hidden text-gray-600 hover:text-sky-500 focus:outline-none transition-colors duration-300">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" class="transition-opacity duration-300" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <path id="close-icon" class="hidden transition-opacity duration-300" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+  
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-6 text-gray-600">
+          <a href="index.html" class="hover:text-sky-500 transition-all duration-300 hover:-translate-y-0.5">Home</a>
+          <a href="about-us.html" class="hover:text-sky-500 transition-all duration-300 hover:-translate-y-0.5">About Us</a>
+          
+          <!-- Desktop Dropdown -->
+          <div class="dropdown relative group">
+            <a href="#" class="dropbtn hover:text-sky-500 transition-all duration-300 hover:-translate-y-0.5">Learn More</a>
+            <div class="dropdown-content absolute hidden group-hover:block bg-white/95 backdrop-blur-sm shadow-xl rounded-lg mt-2 py-2 w-64 transform transition-all duration-300 opacity-0 group-hover:opacity-100">
+              <a href="https://www.healthcare.gov/" target="_blank" class="block px-4 py-2 hover:bg-sky-50 transition-colors duration-300">Health Insurance Marketplace</a>
+              <a href="https://www.medicaid.gov/" target="_blank" class="block px-4 py-2 hover:bg-sky-50 transition-colors duration-300">Medicaid and CHIP</a>
+              <a href="https://phrma.org/middlemen/" target="_blank" class="block px-4 py-2 hover:bg-sky-50 transition-colors duration-300">Understanding Health Insurance</a>
+              <a href="https://www.healthaffairs.org/" target="_blank" class="block px-4 py-2 hover:bg-sky-50 transition-colors duration-300">Health Affairs</a>
+            </div>
+          </div>
+          
+          <a href="contact-us.html" class="hover:text-sky-500 transition-all duration-300 hover:-translate-y-0.5">Contact Us</a>
+        </div>
+      </div>
+  
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="lg:hidden">
+        <div class="hidden px-2 pt-2 pb-3 space-y-1 transform transition-all duration-300 ease-in-out">
+          <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-sky-500 hover:bg-gray-50 rounded-md transition-all duration-300">Home</a>
+          <a href="about-us.html" class="block px-3 py-2 text-gray-600 hover:text-sky-500 hover:bg-gray-50 rounded-md transition-all duration-300">About Us</a>
+          
+          <!-- Mobile Dropdown -->
+          <div class="relative">
+            <button id="mobile-dropdown-button" class="w-full text-left px-3 py-2 text-gray-600 hover:text-sky-500 hover:bg-gray-50 rounded-md transition-all duration-300 flex justify-between items-center">
+              Learn More
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div id="mobile-dropdown-menu" class="hidden bg-gray-50 rounded-md mt-1">
+              <a href="https://www.healthcare.gov/" target="_blank" class="block px-4 py-2 text-gray-600 hover:text-sky-500 transition-colors duration-300">Health Insurance Marketplace</a>
+              <a href="https://www.medicaid.gov/" target="_blank" class="block px-4 py-2 text-gray-600 hover:text-sky-500 transition-colors duration-300">Medicaid and CHIP</a>
+              <a href="https://phrma.org/middlemen/" target="_blank" class="block px-4 py-2 text-gray-600 hover:text-sky-500 transition-colors duration-300">Understanding Health Insurance</a>
+              <a href="https://www.healthaffairs.org/" target="_blank" class="block px-4 py-2 text-gray-600 hover:text-sky-500 transition-colors duration-300">Health Affairs</a>
+            </div>
+          </div>
+          
+          <a href="contact-us.html" class="block px-3 py-2 text-gray-600 hover:text-sky-500 hover:bg-gray-50 rounded-md transition-all duration-300">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero min-h-screen relative flex items-center justify-center pt-16 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/background2.jpg" alt="Background" class="w-full h-full object-cover">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-sky-900/40 backdrop-blur-sm"></div>
+    </div>
+    
+    <div class="hero-text text-center relative z-10 px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 opacity-0 animate-fade-in-up">Get Trusted Health Insurance Quotes</h1>
+      <p class="text-xl text-white/90 mb-8 opacity-0 animate-fade-in-up stagger-delay-1">Find the best health plans tailored to your needs.</p>
+    </div>
+  </section>
+
+  <div class="form bg-white py-16">
+    <div class="form-info max-w-md mx-auto text-center opacity-0 animate-scale-in stagger-delay-2">
+      <p class="text-lg text-gray-700 mb-4">Get free quotes for your healthcare needs:</p>
+      <input id="zip-input" type="textbox" placeholder="Enter Your ZIP Code" maxlength="5" required
+        class="w-64 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all duration-300 hover:border-sky-300">
+      <p id="error-msg" class="text-red-500 mt-2"></p>
+      <button id="getQuoteBtn" class="mt-4 transform transition-all duration-300 hover:scale-105">
+        <a href="quote-request.html" class="button bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-lg transition-all duration-300 inline-block hover:shadow-lg">Request a Quote</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Trusted Partners Section -->
+  <section class="trusted-partners bg-gray-50 py-16 overflow-hidden">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 opacity-0 animate-fade-in-up">Trusted Partners</h2>
+      <div class="partner-logos grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+        <img src="images/Aetna.png" alt="Partner 1" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-1 hover:scale-110 transition-all duration-300">
+        <img src="images/BlueCrossBlueShield.png" alt="Partner 2" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-2 hover:scale-110 transition-all duration-300">
+        <img src="images/Global Life.png" alt="Partner 3" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-3 hover:scale-110 transition-all duration-300">
+        <img src="images/Progressive.png" alt="Partner 4" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-1 hover:scale-110 transition-all duration-300">
+        <img src="images/eHealth.png" alt="Partner 5" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-2 hover:scale-110 transition-all duration-300">
+        <img src="images/AllState.png" alt="Partner 3" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-3 hover:scale-110 transition-all duration-300">
+        <img src="images/Liberty Mutual.png" alt="Partner 4" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-1 hover:scale-110 transition-all duration-300">
+        <img src="images/NationWide.png" alt="Partner 5" class="partner-logo h-16 opacity-0 animate-scale-in stagger-delay-2 hover:scale-110 transition-all duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us bg-white py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8 opacity-0 animate-fade-in-up">Why Choose Trusted Health Rates?</h2>
+      <p class="text-gray-600 text-center mb-12 opacity-0 animate-fade-in-up stagger-delay-1">At Trusted Health Rates, we prioritize your healthcare needs and offer personalized insurance quotes. We work with multiple providers to give you the best plans available. Here's why thousands trust us:</p>
+      <ul class="space-y-6">
+        <li class="flex items-start space-x-4 opacity-0 animate-fade-in-up stagger-delay-1 hover:transform hover:translate-x-2 transition-all duration-300">
+          <span class="text-sky-500 text-2xl">•</span>
+          <div>
+            <strong class="text-gray-800">Comprehensive Plans:</strong>
+            <span class="text-gray-600">Find coverage that fits your needs and budget.</span>
+          </div>
+        </li>
+        <li class="flex items-start space-x-4 opacity-0 animate-fade-in-up stagger-delay-2 hover:transform hover:translate-x-2 transition-all duration-300">
+          <span class="text-sky-500 text-2xl">•</span>
+          <div>
+            <strong class="text-gray-800">Affordable Rates:</strong>
+            <span class="text-gray-600">We compare prices to ensure you get the best deal.</span>
+          </div>
+        </li>
+        <li class="flex items-start space-x-4 opacity-0 animate-fade-in-up stagger-delay-3 hover:transform hover:translate-x-2 transition-all duration-300">
+          <span class="text-sky-500 text-2xl">•</span>
+          <div>
+            <strong class="text-gray-800">Easy and Fast:</strong>
+            <span class="text-gray-600">Get quotes in minutes with our streamlined process.</span>
+          </div>
+        </li>
+        <li class="flex items-start space-x-4 opacity-0 animate-fade-in-up stagger-delay-3 hover:transform hover:translate-x-2 transition-all duration-300">
+          <span class="text-sky-500 text-2xl">•</span>
+          <div>
+            <strong class="text-gray-800">Trusted Providers:</strong>
+            <span class="text-gray-600">We partner with top health insurance companies.</span>
+          </div>
+        </li>
+      </ul>
+      <p class="text-gray-600 text-center mt-12 opacity-0 animate-fade-in-up stagger-delay-3">With over 10 years of experience, Trusted Health Rates is dedicated to providing exceptional customer service and guidance through the complexities of health insurance.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p class="mb-4">© 2024 TrustedHealthRates. All rights reserved.</p>
+      <div class="links space-x-6 mb-6">
+        <a href="terms-and-conditions.html" class="hover:text-sky-300 transition-colors duration-300">Terms & Conditions</a>
+        <a href="privacy-policy.html" class="hover:text-sky-300 transition-colors duration-300">Privacy Policy</a>
+        <a href="careers.html" class="hover:text-sky-300 transition-colors duration-300">Careers</a>
+      </div>
+      <div class="social-media space-x-6">
+        <a href="#" class="hover:text-sky-300 transition-all duration-300 hover:scale-110 inline-block"><i class="ri-facebook-fill text-2xl"></i></a>
+        <a href="#" class="hover:text-sky-300 transition-all duration-300 hover:scale-110 inline-block"><i class="ri-twitter-fill text-2xl"></i></a>
+        <a href="https://www.instagram.com/vicecitysamuel/" class="hover:text-sky-300 transition-all duration-300 hover:scale-110 inline-block"><i class="ri-instagram-fill text-2xl"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/home-page.js"></script>
+</body>
+</html>

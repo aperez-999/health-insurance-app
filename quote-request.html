@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Request Form</title>
+  <link rel="icon" type="images" href="images/TrustedHealthRatesLogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/quote-request.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Health Insurance Quote Request</h2>
+
+    <!-- Step 1: Date of Birth -->
+    <div class="form-step">
+      <label for="dob">What is your date of birth?</label>
+      <input type="date" id="dob" name="dob" required>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+
+    <!-- Step 2: Household Income -->
+    <div class="form-step">
+      <label for="income">What is your household income?</label>
+      <select id="income" name="income" required>
+        <option value="">Select income range</option>
+        <option value="below_25000">Below $25,000</option>
+        <option value="25000_49999">$25,000 - $49,999</option>
+        <option value="50000_74999">$50,000 - $74,999</option>
+        <option value="75000_99999">$75,000 - $99,999</option>
+        <option value="above_100000">Above $100,000</option>
+      </select>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+
+    <!-- Step 3: Health Conditions -->
+    <div class="form-step">
+      <label for="healthConditions" class="health-conditions-title">Do you have any of the following health conditions?</label>
+      <div id="health-conditions">
+        <label><input type="checkbox" id="aids_hiv" name="healthConditions" value="AIDS/HIV"> AIDS/HIV</label>
+        <label><input type="checkbox" id="diabetes" name="healthConditions" value="Diabetes"> Diabetes</label>
+        <label><input type="checkbox" id="heartDisease" name="healthConditions" value="Heart Disease"> Heart Disease</label>
+        <label><input type="checkbox" id="hypertension" name="healthConditions" value="Hypertension"> Hypertension</label>
+        <label><input type="checkbox" id="asthma" name="healthConditions" value="Asthma"> Asthma</label>
+        <label><input type="checkbox" id="cancer" name="healthConditions" value="Cancer"> Cancer</label>
+        <label><input type="checkbox" id="arthritis" name="healthConditions" value="Arthritis"> Arthritis</label>
+        <label><input type="checkbox" id="stroke" name="healthConditions" value="Stroke"> Stroke</label>
+        <label><input type="checkbox" id="epilepsy" name="healthConditions" value="Epilepsy"> Epilepsy</label>
+        <label><input type="checkbox" id="copd" name="healthConditions" value="COPD"> Chronic Obstructive Pulmonary Disease (COPD)</label>
+        <label><input type="checkbox" id="mentalHealth" name="healthConditions" value="Mental Health Disorders"> Mental Health Disorders</label>
+        <label><input type="checkbox" id="obesity" name="healthConditions" value="Obesity"> Obesity</label>
+        <label><input type="checkbox" id="kidneyDisease" name="healthConditions" value="Kidney Disease"> Kidney Disease</label>
+        <label><input type="checkbox" id="sleepApnea" name="healthConditions" value="Sleep Apnea"> Sleep Apnea</label>
+        <label><input type="checkbox" id="liverDisease" name="healthConditions" value="Liver Disease"> Liver Disease</label>
+        <label><input type="checkbox" id="alzheimer" name="healthConditions" value="Alzheimer's Disease"> Alzheimer's Disease</label>
+        <label><input type="checkbox" id="glaucoma" name="healthConditions" value="Glaucoma"> Glaucoma</label>
+        <label><input type="checkbox" id="chronicPain" name="healthConditions" value="Chronic Pain"> Chronic Pain</label>
+        <label><input type="checkbox" id="addisonDisease" name="healthConditions" value="Addison's Disease"> Addison's Disease</label>
+        <label><input type="checkbox" id="sickleCellAnemia" name="healthConditions" value="Sickle Cell Anemia"> Sickle Cell Anemia</label>
+      </div>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+    
+
+    <!-- Step 4: Name -->
+    <div class="form-step">
+      <label for="first-name">What is your first name?</label>
+      <input type="text" id="first-name" name="firstName" required>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+
+    <div class="form-step">
+      <label for="last-name">What is your last name?</label>
+      <input type="text" id="last-name" name="lastName" required>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+
+    <!-- Step 5: Address -->
+    <div class="form-step">
+      <h2>Address Information</h2>
+      <div>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <p class="error-message"></p>
+      </div>
+      
+      <div>
+        <label for="unit">Unit:</label>
+        <input type="text" id="unit" name="unit" required placeholder="Put N/A if not applicable">
+        <p class="error-message"></p>
+      </div>
+    
+      <div>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <p class="error-message"></p>
+      </div>
+    
+      <div>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        <p class="error-message"></p>
+      </div>
+    
+      <div>
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required>
+        <p class="error-message"></p>
+      </div>
+    </div>
+    
+    <!-- Continue Button -->
+    <button type="button" id="continue-btn">Continue</button>
+    
+
+    <!-- Step 6: Email -->
+    <div class="form-step">
+      <label for="email">What is your email address?</label>
+      <input type="email" id="email" name="email" required>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+
+    <!-- Step 7: Phone Number -->
+    <div class="form-step">
+      <label for="phoneNumber">What is your phone number?</label>
+      <input type="tel" id="phone" name="phoneNumber" required>
+      <p class="error-message"></p> <!-- Error container -->
+    </div>
+
+   <!-- Summary Section -->
+<div id="summary"></div>
+
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="scripts/quote-request.js"></script>
+</body>
+</html>
