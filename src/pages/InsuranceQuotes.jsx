@@ -47,11 +47,16 @@ import {
 
 const MotionBox = motion(Box);
 
+// Add BASE_URL constant at the top of the file
+const BASE_URL = import.meta.env.MODE === 'production' 
+  ? '/health-insurance-app' 
+  : '';
+
 // Insurance company data
 const insuranceCompanies = {
   marketplace: {
     name: 'Healthcare Marketplace',
-    logo: '/images/healthcare-logo.webp',
+    logo: `${BASE_URL}/images/healthcare-logo.webp`,
     description: 'Affordable plans for lower-income households',
     website: 'https://www.healthcare.gov',
     features: ['Government subsidies available', 'Wide network coverage', 'Essential health benefits'],
@@ -59,7 +64,7 @@ const insuranceCompanies = {
   },
   aetna: {
     name: 'Aetna',
-    logo: '/images/aetna-logo.jpg',
+    logo: `${BASE_URL}/images/aetna-logo.jpg`,
     description: 'Low-cost health coverage for families',
     website: 'https://www.aetna.com',
     features: ['Large provider network', 'Digital health tools', '24/7 nurse line'],

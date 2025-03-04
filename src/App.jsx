@@ -16,7 +16,7 @@ import EnrollmentConfirmation from './pages/EnrollmentConfirmation';
 function App() {
   return (
     <ChakraProvider>
-      <Router>
+      <Router basename="/health-insurance-app">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

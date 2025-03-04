@@ -35,6 +35,10 @@ const MotionStack = motion(Stack);
 const MotionSimpleGrid = motion(SimpleGrid);
 const MotionContainer = motion(Container);
 
+const BASE_URL = import.meta.env.MODE === 'production' 
+  ? '/health-insurance-app' 
+  : '';
+
 const FadeInOnScroll = ({ children, delay = 0 }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -277,7 +281,7 @@ const Home = () => {
           left={0}
           right={0}
           bottom={0}
-          backgroundImage="url('/images/family-bg.jpg')"
+          backgroundImage={`${BASE_URL}/images/family-bg.jpg`}
           backgroundSize="cover"
           backgroundPosition="50% 30%"
           backgroundRepeat="no-repeat"
