@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Container,
@@ -17,6 +18,10 @@ const MotionStack = motion(Stack);
 const MotionSimpleGrid = motion(SimpleGrid);
 const MotionContainer = motion(Container);
 const MotionImage = motion(Image);
+
+const BASE_URL = import.meta.env.MODE === 'production' 
+  ? '/health-insurance-app' 
+  : '';
 
 const ValueCard = ({ title, description, icon, index }) => {
   const cardBg = useColorModeValue('white', 'gray.800');
@@ -122,9 +127,8 @@ const About = () => {
               <MotionImage
                 rounded="lg"
                 shadow={useColorModeValue('2xl', 'dark-lg')}
-                src="/mission-image.jpg"
+                src={`${BASE_URL}/images/mission-image.jpg`}
                 alt="Our Mission"
-                fallbackSrc="/images/professional.webp"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               />

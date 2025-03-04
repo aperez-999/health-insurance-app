@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Flex,
@@ -21,6 +22,10 @@ const MotionFlex = motion(Flex);
 const MotionStack = motion(Stack);
 const MotionButton = motion(Button);
 const MotionIconButton = motion(IconButton);
+
+const BASE_URL = import.meta.env.MODE === 'production' 
+  ? '/health-insurance-app' 
+  : '';
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -70,7 +75,7 @@ const Navbar = () => {
             <Box>
               <Image
                 h={{ base: "60px", md: "70px" }}
-                src="/images/output-onlinepngtools.png"
+                src={`${BASE_URL}/images/output-onlinepngtools.png`}
                 alt="Trusted Health Rates Logo"
                 style={{
                   objectFit: "contain",

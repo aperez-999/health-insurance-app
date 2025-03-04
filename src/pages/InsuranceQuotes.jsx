@@ -72,7 +72,7 @@ const insuranceCompanies = {
   },
   bluecross: {
     name: 'Blue Cross Blue Shield',
-    logo: '/images/bluecross-logo.jpg',
+    logo: `${BASE_URL}/images/bluecross-logo.jpg`,
     description: 'Comprehensive health insurance solutions',
     website: 'https://www.bcbs.com',
     features: ['Nationwide coverage', 'Wellness programs', 'Telehealth services'],
@@ -80,7 +80,7 @@ const insuranceCompanies = {
   },
   kaiser: {
     name: 'Kaiser Permanente',
-    logo: '/images/kaiser-logo.svg',
+    logo: `${BASE_URL}/images/kaiser-logo.svg`,
     description: 'Integrated healthcare system',
     website: 'https://www.kp.org',
     features: ['Integrated care model', 'Online health services', 'Mental health support'],
@@ -88,7 +88,7 @@ const insuranceCompanies = {
   },
   cigna: {
     name: 'Cigna',
-    logo: '/images/cigna-logo.jpg',
+    logo: `${BASE_URL}/images/cigna-logo.jpg`,
     description: 'Global health service company',
     website: 'https://www.cigna.com',
     features: ['International coverage', 'Pharmacy benefits', 'Behavioral health'],
@@ -96,7 +96,7 @@ const insuranceCompanies = {
   },
   unitedhealth: {
     name: 'UnitedHealthcare',
-    logo: '/images/unitedhealth-logo.jpg',
+    logo: `${BASE_URL}/images/unitedhealth-logo.jpg`,
     description: 'Innovative health benefits',
     website: 'https://www.uhc.com',
     features: ['Virtual visits', 'Medicare plans', 'Dental & vision options'],
@@ -104,7 +104,7 @@ const insuranceCompanies = {
   },
   humana: {
     name: 'Humana',
-    logo: '/images/humana-logo.jpg',
+    logo: `${BASE_URL}/images/humana-logo.jpg`,
     description: 'Specialized Medicare and wellness plans',
     website: 'https://www.humana.com',
     features: ['Medicare Advantage plans', 'Wellness rewards', 'Senior care focus'],
@@ -112,7 +112,7 @@ const insuranceCompanies = {
   },
   anthem: {
     name: 'Anthem',
-    logo: '/images/anthem-logo.png',
+    logo: `${BASE_URL}/images/anthem-logo.png`,
     description: 'Innovative healthcare solutions',
     website: 'https://www.anthem.com',
     features: ['Large network', 'Digital-first experience', 'Personalized care'],
@@ -120,7 +120,7 @@ const insuranceCompanies = {
   },
   molina: {
     name: 'Molina Healthcare',
-    logo: '/images/molina.jpg',
+    logo: `${BASE_URL}/images/molina.jpg`,
     description: 'Quality healthcare for all',
     website: 'https://www.molinahealthcare.com',
     features: ['Medicaid plans', 'Community focus', 'Culturally sensitive care'],
@@ -128,7 +128,7 @@ const insuranceCompanies = {
   },
   centene: {
     name: 'Centene',
-    logo: '/images/centene-logo.jpg',
+    logo: `${BASE_URL}/images/centene-logo.jpg`,
     description: 'Local care, national reach',
     website: 'https://www.centene.com',
     features: ['Local providers', 'Government programs', 'Specialized care'],

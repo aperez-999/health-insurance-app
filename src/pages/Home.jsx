@@ -281,7 +281,7 @@ const Home = () => {
           left={0}
           right={0}
           bottom={0}
-          backgroundImage={`${BASE_URL}/images/family-bg.jpg`}
+          backgroundImage={`url(${BASE_URL}/images/family-bg.jpg)`}
           backgroundSize="cover"
           backgroundPosition="50% 30%"
           backgroundRepeat="no-repeat"
