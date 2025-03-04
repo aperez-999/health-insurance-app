@@ -127,7 +127,7 @@ const About = () => {
               <MotionImage
                 rounded="lg"
                 shadow={useColorModeValue('2xl', 'dark-lg')}
-                src={`${BASE_URL}/images/mission-image.jpg`}
+                src={`${BASE_URL}/images/professional.webp`}
                 alt="Our Mission"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}

@@ -120,39 +120,45 @@ const ValueCard = ({ icon, title, description, index }) => {
 
 const jobOpenings = [
   {
-    title: 'Insurance Sales Representative',
-    type: 'Full-time',
-    location: 'Remote',
-    description: 'We are looking for motivated sales professionals to help clients find the perfect health insurance coverage.',
+    title: "Insurance Sales Representative",
+    department: "Sales",
+    location: "Miami, FL",
+    type: "Full-time",
+    workArrangement: "Hybrid (Office/Remote)",
+    description: "Join our dynamic sales team to help clients find the perfect health insurance coverage.",
     requirements: [
-      'Previous sales experience',
-      'Strong communication skills',
-      'Health insurance knowledge preferred',
-      'Self-motivated and goal-oriented'
+      "2+ years of insurance sales experience",
+      "Licensed health insurance agent",
+      "Strong communication skills",
+      "Goal-oriented mindset"
     ]
   },
   {
-    title: 'Customer Service Specialist',
-    type: 'Full-time',
-    location: 'Hybrid',
-    description: 'Join our customer service team to provide exceptional support to our valued clients.',
+    title: "Customer Service Specialist",
+    department: "Customer Support",
+    location: "Miami, FL",
+    type: "Full-time",
+    workArrangement: "Remote",
+    description: "Provide exceptional support to our clients and help them navigate their insurance needs.",
     requirements: [
-      'Customer service experience',
-      'Problem-solving abilities',
-      'Insurance industry knowledge a plus',
-      'Excellent phone and email communication'
+      "Previous customer service experience",
+      "Knowledge of health insurance",
+      "Excellent problem-solving skills",
+      "Bilingual (English/Spanish) preferred"
     ]
   },
   {
-    title: 'Insurance Account Manager',
-    type: 'Full-time',
-    location: 'On-site',
-    description: 'Manage and grow relationships with our existing client base while ensuring their insurance needs are met.',
+    title: "Insurance Claims Analyst",
+    department: "Claims",
+    location: "Miami, FL",
+    type: "Full-time",
+    workArrangement: "Hybrid (Office/Remote)",
+    description: "Process and analyze insurance claims while ensuring compliance and customer satisfaction.",
     requirements: [
-      'Insurance license required',
-      '3+ years account management experience',
-      'Strong organizational skills',
-      'Client relationship management experience'
+      "3+ years of claims processing experience",
+      "Strong attention to detail",
+      "Knowledge of healthcare regulations",
+      "Bachelor's degree preferred"
     ]
   }
 ];
@@ -214,38 +220,25 @@ const Careers = () => {
   ];
 
   return (
-    <Box bg={bgColor} minH="100vh" pt={{ base: "80px", md: "100px" }}>
+    <Box minH="100vh" bg={bgColor} pt={{ base: 20, md: 28 }} pb={10}>
       <Container maxW="container.xl">
-        <MotionStack
-          spacing={16}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {/* Hero Section */}
-          <Stack spacing={6} textAlign="center">
-            <MotionBox
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+        <VStack spacing={8} align="stretch">
+          <Stack spacing={4} textAlign="center">
+            <Heading
+              color={headingColor}
+              fontSize={{ base: '3xl', md: '4xl' }}
             >
-              <Heading
-                as="h1"
-                size="2xl"
-                color={headingColor}
-                mb={4}
-              >
-                Join Our Team
-              </Heading>
-              <Text
-                fontSize="xl"
-                color={textColor}
-                maxW="2xl"
-                mx="auto"
-              >
-                Help us make healthcare more accessible and affordable for everyone
-              </Text>
-            </MotionBox>
+              Join Our Team in Miami
+            </Heading>
+            <Text
+              color={textColor}
+              fontSize={{ base: 'lg', md: 'xl' }}
+              maxW="3xl"
+              mx="auto"
+            >
+              Be part of a dynamic team that's revolutionizing the health insurance industry.
+              We offer flexible work arrangements including remote and hybrid options.
+            </Text>
           </Stack>
 
           {/* Values Section */}
@@ -291,7 +284,15 @@ const Careers = () => {
               ))}
             </MotionSimpleGrid>
           </Stack>
-        </MotionStack>
+
+          <Box textAlign="center" py={8}>
+            <Text fontSize="lg" color={textColor} mb={4}>
+              Our modern office is located in the heart of Miami, Florida. We embrace a flexible work culture
+              that includes both remote and hybrid work arrangements, allowing our team members to maintain
+              a healthy work-life balance while delivering exceptional service to our clients.
+            </Text>
+          </Box>
+        </VStack>
       </Container>
     </Box>
   );
